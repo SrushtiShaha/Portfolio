@@ -209,11 +209,16 @@ img {
   color: var(--first-color);
 }
 .home__img {
-  position: absolute;
-  right: 0;
-  bottom: 0;
+  position: relative;
   width: 260px;
-  margin-top: 40px;
+  margin: auto;
+}
+@media screen and (min-width: 768px) {
+  .home__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
 }
 .home__blob {
   fill: var(--first-color);
